@@ -10,27 +10,27 @@ const AnimatedImageGrid: React.FC = () => {
       delay: 0
     },
     {
-      src: "public/WhatsApp Image 2026-05-28 at 10.17.46 AM (1).jpeg",
+      src: "/WhatsApp Image 2026-05-28 at 10.17.46 AM (1).jpeg",
       caption: "Allah's Most Beautiful Creation",
       delay: 0.2
     },
     {
-      src: "public/WhatsApp Image 2026-05-28 at 10.17.46 AM.jpeg",
+      src: "/WhatsApp Image 2026-05-28 at 10.17.46 AM.jpeg",
       caption: "Forever In My Heart",
       delay: 0.4
     },
     {
-       src: "public/WhatsApp Image 2026-05-31 at 10.46.49 PM.jpeg",
+       src: "/WhatsApp Image 2026-05-31 at 10.46.49 PM.jpeg",
       caption: "You Are My Everything",
       delay: 0.6
     },
     {
-      src: "public/WhatsApp Image 2026-03-15 at 6.00.43 PM.jpeg",
+      src: "/WhatsApp Image 2026-03-15 at 6.00.43 PM.jpeg",
       caption: "Love Beyond Words",
       delay: 0.8
     },
     {
-      src:  "public/WhatsApp Image 2026-05-28 at 3.30.50 PM (1).jpeg",
+      src:  "/WhatsApp Image 2026-05-28 at 3.30.50 PM (1).jpeg",
       caption: "Beautiful Like You",
       delay: 1.0
     }
