@@ -21,7 +21,7 @@ const Index = () => {
   useEffect(() => {
     // Auto-play background music
     const audio = new Audio();
-    audio.src = "public/WhatsApp Audio 2026-05-31 at 11.32.52 PM.mpeg";
+    audio.src = "/WhatsApp Audio 2026-05-31 at 11.32.52 PM.mpeg";
     audio.loop = true;
     audio.volume = 0.9;
     
