@@ -55,8 +55,16 @@ const Index = () => {
     }
   };
 
-  const handleEnterSite = () => {
+  const handleEnterSite = (date:object) => {
+     const { dd, mm, yyyy } = date;
+     console.log(date)
+
+  if (dd == 12 && mm == 6 && yyyy == 2007) {
     setShowIntro(false);
+  }
+  else{
+    console.log("hi")
+  }
   };
 
   const handleSurpriseClick = () => {

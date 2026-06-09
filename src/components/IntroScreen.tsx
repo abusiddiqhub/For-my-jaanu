@@ -17,6 +17,18 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onEnter }) => {
     setBalloons(balloonsData);
   }, []);
 
+   const [date, setDate] = useState({
+    "mm":undefined,
+    "dd":undefined,
+    "yyyy":undefined
+   });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const {value,name}= e.target
+  setDate({...date,[name]:value});
+  console.log(date)
+  };
+
   return (
     <div className="intro-screen">
       {/* Flying heart */}
@@ -42,9 +54,14 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onEnter }) => {
           <br />
           <span className="intro-subtitle">Awaits You Afreen🤍</span>
         </h1>
+       <div className='flex gap-5 justify-center items-center my-10 '>
+          <input type="number" name='dd' value={date.dd} maxLength={2} pattern="[0-9]*" onChange={handleChange} className='h-10 w-12 rounded-xl ring ring-pink-500 border-2   focus:border-pink-500 focus-within:ring-pink-500 focus:outline-none' placeholder='dd'/>
+          <input type="number" name='mm' value={date.mm} maxLength={2} pattern="[0-9]*" onChange={handleChange} className='h-10 w-12 rounded-xl ring ring-pink-500 border-2   focus:border-pink-500 focus-within:ring-pink-500 focus:outline-none' placeholder='mm'/>
+          <input type="number" name='yyyy' value={date.yyyy} maxLength={4} pattern="[0-9]*" onChange={handleChange} className='h-10 w-20 rounded-xl ring ring-pink-500 border-2   focus:border-pink-500 focus-within:ring-pink-500 focus:outline-none' placeholder='yyyy'/>
+        </div>
         
         <button 
-          onClick={onEnter}
+          onClick={()=>onEnter(date)}
           className="enter-button"
         >
           <span className="button-text">Kiss to Begin😘</span>
